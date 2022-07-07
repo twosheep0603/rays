@@ -8,13 +8,12 @@ class Emitter extends Element {
   constructor(props) {
     super({
       ...props,
-      isActive: "isActive" in props ? props.isActive : false
+      isActive: "isActive" in props ? props.isActive : true
     });
 
     this.rays = [
       new Ray({
         dir: this.baseDir.clone().multiply(world.cellSize)
-		console.log(dir);
       })
     ];
   }

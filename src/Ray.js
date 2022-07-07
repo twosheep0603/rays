@@ -9,7 +9,7 @@ class Ray {
   }
 
   move() {
-    this.len.add(this.dir.clone().multiply(5));	//Test for speed up the ray
+    this.len.add(this.dir);
   }
 }
 
